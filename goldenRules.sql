@@ -19,18 +19,18 @@ BEGIN
 			if((@curPow&@num)!=0)
 			begin
 				select @rule = case @curPow
-									when 1    then 'Driving Safety'
-									when 2    then 'Management of Change'
-									when 4    then 'Lifting Operations'
-									when 8    then 'Fire Safety'
-									when 16   then 'Working at Height'
-									when 32   then 'Energyzed Systems'
-									when 64	  then 'Excavation Safety'
-									when 128  then 'Permit of Work'
-									when 256  then 'Health Management'
-									when 512  then 'Personal Protective Equipment'
-									when 1024 then 'Hydrogen Sulphide'
-									when 2048 then 'Confined Space'
+									when 1    then 'Rule1'
+									when 2    then 'Rule2'
+									when 4    then 'Rule3'
+									when 8    then 'Rule4'
+									when 16   then 'Rule5'
+									when 32   then 'Rule6'
+									when 64	  then 'Rule7'
+									when 128  then 'Rule8'
+									when 256  then 'Rule9'
+									when 512  then 'Rule10'
+									when 1024 then 'Rule11'
+									when 2048 then 'Rule12'
 							   end
 				set @rules  = @rules + ' ' + @rule + ', '
 			end;
